@@ -43,6 +43,7 @@ img {
 
 a {
   text-decoration: none;
+  color: #303030;
 }
 
 a:hover, a:active, a:focus{
@@ -58,6 +59,10 @@ a:hover, a:active, a:focus{
   margin: auto;
 }
 
+.content {
+  margin-top: 5em;
+}
+
 section {
   margin-top: 4em;
 }
@@ -66,8 +71,15 @@ section {
 /*NAVIGATION*/
 
 nav {
-  margin-top: 1em;
-  margin-bottom: 5em;
+  padding-top: 1em;
+  padding-bottom: 0.4em;
+
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+
+  width: 100%;
+  background-color: #fff;
 }
 
 .nav-links {
@@ -78,14 +90,14 @@ nav {
 .nav-links a{
   font-family: 'Open Sans', sans-serif;
   font-size: 0.9em;
-  color: #303030;
+  color: #8c8c8c;
   text-transform: uppercase;
 
   margin-right: 2em;
 }
 
 .nav-links a:hover, .nav-links a:active, .nav-links a:focus{
-  border-bottom: solid 2px #303030;
+  color: #303030;
 }
 
 .home-link {
@@ -99,7 +111,12 @@ nav {
 }
 
 .current-link {
-  border-bottom: solid 2px #303030;
+  color: #444444;
+  font-weight: bold;
+}
+
+.center-align {
+  text-align: center;
 }
 
 /*BUTTONS */
@@ -136,6 +153,26 @@ nav {
   text-decoration: underline;
 }
 
+/*About Page*/
+
+.about-text {
+  margin-left: 1em;
+}
+
+/*iFrame Video*/
+
+.iframe-container {
+  padding: 56.25% 0 0 0;
+  position: relative;
+}
+
+iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 
 /*SECTION STYLING*/
 
@@ -178,4 +215,12 @@ h2.style-section-title {
 
 .dark-grey {
   background-color: #303030;
+}
+
+/*media query */
+@media only screen and (max-width: 1500px) {
+  .container {
+    width: 80%;
+  }
+
 }

@@ -29,3 +29,52 @@ and referencing https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
   display: inline-block;
 }
+
+.about-img {
+  -webkit-flex: 1 1 0;
+  -ms-flex: 1 1 0;
+  flex: 1 1 0;
+
+  display: inline-block;
+}
+
+.about-text {
+  -webkit-flex: 2 1 0;
+  -ms-flex: 2 1 0;
+  flex: 2 1 0;
+
+  display: inline-block;
+}
+
+.nav-1 {
+  -webkit-flex: 1 1 0;
+  -ms-flex: 1 1 0;
+  flex: 1 1 0;
+
+  display: inline-block;
+}
+
+.about-page {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+
+  display: inline-block;
+}
+
+/*media query */
+@media only screen and (max-width: 740px) {
+  .about-img {
+    -webkit-flex: 1 1 100%;
+    -ms-flex: 1 1 100%;
+    flex: 1 1 100%;
+
+    text-align: center;
+  }
+
+  .about-text {
+    -webkit-flex: 1 1 100%;
+    -ms-flex: 1 1 100%;
+    flex: 1 1 100%;
+  }
+}

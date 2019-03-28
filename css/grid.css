@@ -54,6 +54,14 @@ and referencing https://css-tricks.com/snippets/css/a-guide-to-flexbox/
   display: inline-block;
 }
 
+.nav-home {
+  -webkit-flex: 1 1 0;
+  -ms-flex: 1 1 0;
+  flex: 1 1 0;
+
+  display: inline-block;
+}
+
 .about-page {
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
@@ -76,5 +84,27 @@ and referencing https://css-tricks.com/snippets/css/a-guide-to-flexbox/
     -webkit-flex: 1 1 100%;
     -ms-flex: 1 1 100%;
     flex: 1 1 100%;
+  }
+
+  .grow-1 {
+    -webkit-flex: 1 1 100%;
+    -ms-flex: 1 1 100%;
+    flex: 1 1 100%;
+
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 565px) {
+  .nav-home {
+    -webkit-flex: 1 1 100%;
+    -ms-flex: 1 1 100%;
+    flex: 1 1 100%;
+
+    order: 1;
+  }
+
+  .nav-1 {
+    order: 2;
   }
 }
